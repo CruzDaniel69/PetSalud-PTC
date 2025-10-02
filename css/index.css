@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka:wght@300..700&display=swap');
+
+body{
+     font-family: "Fredoka", sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #43E0D3;
+}
+
+.Presentacion{
+    background-color: #b8e1f5;
+    font-size: 52px;
+}
+
+.textoPresentacion{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #9cc0d1;
+}
+
+.Pet{
+    color: #43E0D3;
+}
+
+.fotoHusky{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgHusky{
+    width: 800pxs;
+}
+
+.btn-primary{
+    background-color: #43E0D3;
+    border-color: #43E0D3;
+    border-radius: 30px;
+}
+
+.btn-primary:hover{
+    background-color: #38c0b7;
+    border-color: #38c0b7;
+}
+
