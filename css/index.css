@@ -10,21 +10,23 @@ nav a{
 }
 
 nav a:hover{
-    color: #43E0D3;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #37D4FF;
 }
 
 .Presentacion{
-    background-color: #b8e1f5;
+    background-color: #247097;
     font-size: 52px;
 }
 
 .textoPresentacion{
     color: #FFFFFF;
-    text-shadow: 1px 1px 1px #9cc0d1;
+    text-shadow: 1px 1px 1px #3b5f69;
 }
 
 .Pet{
-    color: #43E0D3;
+    color: #37D4FF;
 }
 
 .fotoHusky{
@@ -37,13 +39,17 @@ nav a:hover{
 }
 
 .btn-primary{
-    background-color: #43E0D3;
-    border-color: #43E0D3;
+    background-color: #37D4FF;
+    border-color: #37D4FF;
     border-radius: 30px;
 }
 
 .btn-primary:hover{
-    background-color: #38c0b7;
-    border-color: #38c0b7;
+    background-color: #2eb2d6;
+    border-color: #2eb2d6;
+}
+
+.btnContacts{
+    border-radius: 30px;
 }
 
