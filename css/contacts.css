@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka:wght@300..700&display=swap');
+
+body{
+     font-family: "Fredoka", sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #247097;
+}
+
+.Presentacion{
+    background-color: #247097;
+    font-size: 52px;
+}
+
+main{
+    background-color: #F8F8F8;
+}
+
+.cardBg{
+    background-image: linear-gradient(rgba(126, 126, 126, 0), rgba(0, 0, 0, 0.5)), url(../img/ContactanosFondo.png);
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4%;
+    color: #ffffff;
+}
+
+.social-media a{
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social-media a :hover{
+    background-color: #247097;
+    color: #FFFFFF;
+    width: 10px;
+}
+
+main{
+    background-color: #D2D2D2;
+}
+
+.ContDireccion a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.ContDireccion a:hover{
+    text-decoration:underline;
+}
+
+.links-RedesSociales a{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.links-RedesSociales a:hover{
+    background-color: #247097;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #F8F8F8;
+}
