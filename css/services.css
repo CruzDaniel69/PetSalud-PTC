@@ -1,111 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Fredoka:wght@300..700&display=swap');
 
-body{
-     font-family: "Fredoka", sans-serif;
+body {
+    font-family: "Fredoka", sans-serif;
 }
 
-nav a{
+.nav-link {
     text-decoration: none;
     color: black;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.4s;
+    border-radius: 10px;
 }
 
-nav a:hover{
+.nav-link:hover {
     color: #ffffff;
     background-color: #247097;
 }
 
-main{
+main {
     background-color: #F8F8F8;
 }
 
-.desc-servicios a{
-    font-size: 20px;
+.desc-servicios a {
+    font-size: clamp(16px, 2vw, 20px);
     text-decoration: none;
     color: #ffffff;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 20px;
     background-color: #247097;
     transition: 0.4s;
+    display: inline-block;
 }
 
-.desc-servicios a:hover{
+.desc-servicios a:hover {
     background-color: #2eb2d6;
 }
 
-.desc-servicios a i{
-    padding: 10px;
+.desc-servicios a i {
+    padding: 0 5px;
 }
 
-.cardBg{
+.cardBg {
     background-image: linear-gradient(rgba(126, 126, 126, 0), rgba(0, 0, 0, 0.5)), url(../img/FondoServiciosMedicos.png);
     background-position: 50% 70%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 4%;
     color: #ffffff;
+    text-align: center;
 }
 
 .container-sm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 15px;
     border-radius: 20px;
-    height: 450px;
-    font-size: 25px;
-    overflow: auto;
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.card{
-    width: 250px;
+.card {
+    width: 100%;
+    max-width: 250px;
     border-radius: 20px;
     border: none;
-    margin: 10px;
+    margin: auto;
     box-shadow: 1px 10px 10px #cacaca;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
-.container-sm .card:hover{
-    width: 270px;
+.card button{
+    background-color: #247097;
+    border-color: #247097;
 }
 
-.card img{
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
     width: 100%;
-    height: 150px; 
+    height: 150px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.card a{
+.card a {
     background-color: #247097;
     border-color: #247097;
     transition: 0.3s;
 }
 
-.card a:hover{
+.card a:hover {
     background-color: #37D4FF;
     border-color: #37D4FF;
 }
 
-.social-media a{
-    font-size: 20px;
+.social-media a {
+    font-size: clamp(18px, 5vw, 20px);
     color: #000000;
     background-color: #ffffff;
-    border-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px;
     text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
 }
 
-.social-media a :hover{
+.social-media a:hover {
     background-color: #247097;
     color: #FFFFFF;
-    width: 10px;
 }
 
-.areas .card:hover{
-    width: 25%;
+.areas .card {
+    margin: 10px;
+    transition: 0.3s;
 }
 
-.modal-body{
+.areas .card:hover {
+    transform: scale(1.05);
+}
+
+.modal-body {
     font-size: 14px;
     text-align: start;
+}
+
+.modal-footer a{
+    background-color: #247097;
+    border-color: #247097;
+}
+
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .container-sm {
+        grid-template-columns: 1fr;
+        max-height: 600px;
+    }
+
+    .areas .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container-sm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .areas .card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-sm {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .areas .card {
+        width: 22%;
+    }
 }
